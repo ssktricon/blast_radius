@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContractChange",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["contract", "member", "before", "after", "classification", "evidence"],
+    "properties": {
+      "contract": { "type": "string" },
+      "member": { "type": "string" },
+      "before": { "type": ["string", "null"] },
+      "after": { "type": ["string", "null"] },
+      "classification": {
+        "type": "string",
+        "enum": ["breaking", "potentially_breaking", "additive", "internal"]
+      },
+      "evidence": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+diff --git a/OrderCreated.cs b/OrderCreated.cs
+index 1111111..2222222 100644
+--- a/OrderCreated.cs
++++ b/OrderCreated.cs
+@@
+ public record OrderCreated
+ {
+-    public decimal Amount { get; init; }
++    public decimal TotalAmount { get; init; }
+     public Guid OrderId { get; init; }
+ }
+
+ diff --git a/OrderConsumer.cs b/OrderConsumer.cs
+ index 3333333..4444444 100644
+--- a/OrderConsumer.cs
++++ b/OrderConsumer.cs
+@@
+ public class OrderConsumer
+ {
+-    var total = order.Amount;
++    var total = order.TotalAmount;
+ }

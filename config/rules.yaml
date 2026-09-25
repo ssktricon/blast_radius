@@ -1,0 +1,27 @@
+contract_rules:
+  breaking:
+    - "member_renamed"
+    - "member_removed"
+    - "member_type_changed"
+  potentially_breaking:
+    - "nullable_change"
+    - "required_to_optional"
+  additive:
+    - "member_added"
+  internal:
+    - "no_op"
+    - "comment_only"
+
+risk:
+  breaking:
+    level: "high"
+    score: 90
+  potentially_breaking:
+    level: "medium"
+    score: 60
+  additive:
+    level: "low"
+    score: 20
+  internal:
+    level: "none"
+    score: 0
