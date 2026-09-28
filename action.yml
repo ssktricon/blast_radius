@@ -1,5 +1,0 @@
-name: "Blast Radius Contract Analysis"
-description: "Runs the contract analysis stream for a PR diff"
-runs:
-  using: "docker"
-  image: "Dockerfile"
